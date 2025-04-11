@@ -13,7 +13,7 @@ const LoginForm =  () => {
     e.preventDefault();
 
     try{
-      const response = await axios.post("http://localhost:3000/user/login", {
+      const response = await axios.post("https://tiny-short-backend-production.up.railway.app/user/login", {
         username,
         password,
       });
@@ -23,7 +23,7 @@ const LoginForm =  () => {
         setPassword("");
         const token = response.data.token;  
         localStorage.setItem("token", token);
-        console.log('Token IN LOGIN = ', token)
+        
         navigate("/home")
         
       }else  {

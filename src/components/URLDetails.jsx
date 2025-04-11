@@ -13,7 +13,7 @@ const URLDetails = () => {
       
       try {
         const response = await axios.get(
-          "http://localhost:3000/url/getUrlDetails",
+          "https://tiny-short-backend-production.up.railway.app/url/getUrlDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -83,12 +83,12 @@ const URLDetails = () => {
                 </td>
                 <td className="px-6 py-4">
                   <a
-                    href={`http://localhost:3000/url/${urlDetail.shortId}`}
+                    href={`https://tiny-short-backend-production.up.railway.app/url/${urlDetail.shortId}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-black font-bold hover:underline"
                   >
-                    {`http://localhost:3000/url/${urlDetail.shortId}`}
+                    {`https://tiny-short-backend-production.up.railway.app/url/${urlDetail.shortId}`}
                   </a>
                 </td>
                 <td className="px-6 py-4">

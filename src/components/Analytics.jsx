@@ -13,7 +13,7 @@ const Analytics = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          `http://localhost:3000/url/analytics/${shortId}`,
+          `https://tiny-short-backend-production.up.railway.app/url/analytics/${shortId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -62,7 +62,7 @@ const Analytics = () => {
       {urlAnalytics ? (
         <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-            Analytics for <span className="text-blue-600">http://localhost:3000/url/{shortId}</span>
+            Analytics for <span className="text-blue-600">https://tiny-short-backend-production.up.railway.app/url/{shortId}</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Click Count */}

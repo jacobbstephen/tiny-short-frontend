@@ -19,7 +19,7 @@ const ShortenUrl = () => {
     console.log('Token IN SHORTEN URL = ', token)
     try {
       const response = await axios.post(
-        "http://localhost:3000/url/shorten",
+        "https://tiny-short-backend-production.up.railway.app/url/shorten",
         {originalUrl: url },
         {
           headers: {

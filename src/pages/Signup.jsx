@@ -14,7 +14,7 @@ const Signup = () => {
     console.log("IN Handle");
 
     try {
-      const response = await axios.post("http://localhost:3000/user/signup", {
+      const response = await axios.post("https://tiny-short-backend-production.up.railway.app/user/signup", {
         username,
         password,
       });

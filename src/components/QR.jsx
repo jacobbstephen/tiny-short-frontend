@@ -10,7 +10,7 @@ const QR = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          `http://localhost:3000/url/qr/${shortId}`,
+          `https://tiny-short-backend-production.up.railway.app/url/qr/${shortId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
