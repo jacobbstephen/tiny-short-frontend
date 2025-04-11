@@ -62,7 +62,6 @@ const URLDetails = () => {
             <th scope="col" className="px-6 py-3">Long URL</th>
             <th scope="col" className="px-6 py-3">Short URL</th>
             <th scope="col" className="px-6 py-3">QR Code</th>
-            <th scope="col" className="px-6 py-3">Analytics</th>
           </tr>
         </thead>
         <tbody>
@@ -99,14 +98,7 @@ const URLDetails = () => {
                     Generate QR
                   </button>
                 </td>
-                <td className="px-6 py-4 text-right">
-                  <button
-                    onClick={() => handleAnalytics(urlDetail.shortId)}
-                    className="bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700"
-                  >
-                    View Analytics
-                  </button>
-                </td>
+                
               </tr>
             ))
           )}
